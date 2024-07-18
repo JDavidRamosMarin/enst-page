@@ -1,0 +1,21 @@
+/* :host ::ng-deep .p-menubar {
+    border: 0;
+    border-style: none;
+    border-radius: 0px;
+    background: white;
+}
+
+:host ::ng-deep .p-menuitem {
+    /* background-color: rgb(173, 255, 106); 
+     margin-left: 1px;
+    font-family: 'Exo', sans-serif;
+    justify-content: start;
+}
+
+:host .navbar.ui-menubar {
+    text-align: center !important;
+}
+
+.navbar.ui-menu-list {
+    display: block;
+} */ 
