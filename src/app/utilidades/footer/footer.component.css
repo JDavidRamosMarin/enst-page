@@ -1,0 +1,10 @@
+p {
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}

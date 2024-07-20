@@ -1,34 +1,36 @@
 <div class="grid bg-blue-800 m-0 align-items-center justify-content-center w-auto">
 
-    <div class="col-12 sm:col-6 md:col-6 lg:col-3 p-3 align-items-centerjustify-content-center ">
+    <div class="col-12 sm:col-12 md:col-6 lg:col-3 p-3 align-items-centerjustify-content-center ">
         <img src="assets/images/logo1.png" (click)="Ruta()" class="h-4rem ml-10 cursor-pointer" />
     </div>
 
-    <div class="col-12 sm:col-6 md:col-6 lg:col-3 p-3 align-items-centerjustify-content-center ">
+    <div class="col-12 sm:col-12 md:col-6 lg:col-3 p-3 align-items-centerjustify-content-center ">
         <div *ngFor="let item of items;" class="my-1">
-            <i [class]="'pi ' + item.icon"
-                style="display: flex; font-size: 2rem; color: white; margin-bottom: 0; padding-bottom: 0;">
-                <div class="font-italic ml-1 text-yellow-400 font-bold mb-0 ">{{item.titulo}}</div>
-            </i>
-            <p class="mt-1 text-white-alpha-90 font-italic font-bold font-sm">{{item.descripcion}}</p>
+            <a href={{item.url}}>
+                <i [class]="'pi ' + item.icon" 
+                    style="display: flex; font-size: 1rem; color: white; margin-bottom: 0; padding-bottom: 0;">
+                    <div class="font-italic ml-1 text-yellow-400 font-bold mb-0 ">{{item.titulo}}</div>
+                </i>
+                <p class="mt-1 ">{{item.descripcion}}</p>
+            </a>
         </div>
     </div>
 
-    <div class="col-12  sm:col-6 md:col-6 lg:col-3 align-items-centerjustify-content-center ">
+    <div class="col-12  sm:col-12 md:col-6 lg:col-3 align-items-centerjustify-content-center ">
         <div *ngFor="let mensaje of mensajes;" class="my-1">
-            <div style="font-size: 2rem;">
-                <p class="font-italic text-4x1 ml-1 text-yellow-400 font-bold  ">
+            <div style="font-size: 1rem;">
+                <p class="font-italic text-4x1 ml-1 text-yellow-400 font-bold ">
                     {{mensaje.titulo}}
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="col-12 sm:col-6 md:col-6 lg:col-3 ">
-        <div *ngFor="let itemCoont of itemsCont;">
-            <i [class]="'pi ' + itemCoont.icon"
-                style="display: flex; font-size: 2rem; color: white; margin-bottom: 0; padding-bottom: 0;">
-                <p class="flex mt-1 text-white-alpha-90 font-italic font-bold font-sm ">{{itemCoont.titulo}}</p>
+    <div class="col-12 sm:col-12 md:col-6 lg:col-3 ">
+        <div *ngFor="let itemCont of itemsCont;">
+            <i [class]="'pi ' + itemCont.icon"
+                style="display: flex; font-size: 1rem; color: white; margin-bottom: 0; padding-bottom: 0;">
+                <p class="flex mt-1  ml-2">{{itemCont.titulo}}</p>
             </i>
             <!-- <div class="flex mt-1 text-white-alpha-90 font-italic font-bold font-sm ">{{itemCoont.titulo}}</div> -->
         </div>
