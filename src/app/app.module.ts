@@ -13,6 +13,7 @@ import { InstalacionesComponent } from './enst/paginas/instalaciones/instalacion
 import { AccesosComponent } from './enst/paginas/accesos/accesos.component';
 import { TransparenciaComponent } from './enst/paginas/transparencia/transparencia.component';
 import { NormatividadComponent } from './enst/paginas/normatividad/normatividad.component';
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
 
 @NgModule({
@@ -26,11 +27,12 @@ import { NormatividadComponent } from './enst/paginas/normatividad/normatividad.
     AccesosComponent,
     TransparenciaComponent,
     NormatividadComponent,
-
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PrimeNgModule,
     UtilidadesModule
   ],
   providers: [],

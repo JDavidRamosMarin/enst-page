@@ -1,21 +1,47 @@
-<p-menubar [model]="items" class="border-none border-noround">
-    <ng-template pTemplate="start">
-        <img src="./favicon.ico0" />
-    </ng-template>
-</p-menubar>
+<!--Corroborar similitud del color de rgb(248, 249, 250) y bluegray-50-->
+<!-- <div class="flex sticky top-0 bg-bluegray-50 h-4rem align-items-center justify-content-center w-auto ">
+    -- <div class="flex-initial flex-shrink-1 flex align-items-center justify-content-center ml-3 sm: ml-1 sm:">
+        <img src="./favicon.ico" />
+    </div> 
+    <div class="flex flex-initial flex-shrink-1 align-items-center justify-content-center ml-3 ">
+        <img src="assets/images/logo2.png" class="flex h-3rem w-full " />
+    </div>
+    -- <div class="flex-shrink-0 flex-grow-1 sm:flex-none flex align-items-center justify-content-center font-bold p-4 m-3 border-round" >
+        <p-menubar [model]="items"></p-menubar>
+    </div> 
+    <div class="flex flex-wrap flex-grow-1 align-items-center justify-content-center sm:mr-1" >
+        <p-menubar [model]="items"></p-menubar>
+    </div>
+</div> -->
 
-<!-- <div class="grid">
-    <div class="col">
-        <div class="p-4">
-            <ng-component pTemplate="start">
-                <img src=".\Assets\images\logo2.png" alt="">
-            </ng-component>
-        </div>
+<!--
+flex-grow-1 flex-shrink-1 flex align-items-center justify-content-center font-bold p-4 m-3 border-round
+flex-shrink-0 flex align-items-center justify-content-center font-bold p-4 m-3 border-round"
+-->
+
+<div class="flex sticky top-0 bg-bluegray-50 h-4rem align-items-center justify-content-center w-auto ">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <img src="assets/images/logo2.png" class="h-3rem " />
+        </ng-template>
+    </p-menubar>
+</div>
+
+
+
+<!-- <div class="grid sticky top-0 bg-primary h-4rem align-items-center justify-content-center w-auto ">
+
+    <div class="col-1  align-items-start justify-content-center ml-3 ">
+
+        <img src="assets/images/logo2.png" class="h-3rem w-full " />
+
     </div>
 
-    <div class="col">
-        <div class="p-8">
-            <p-menubar [model]="items" />
+    <div class="grid flex-wrap  " >
+        <div class="col">
+            <p-menubar [model]="items"></p-menubar>
         </div>
     </div>
 </div> -->
+
+

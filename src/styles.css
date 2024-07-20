@@ -1,2 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
 
+body {
+    margin: 0;
+}
+
+p, div {
+    font-family: exp, sans-serif;
+}
+
+/* div {
+    font-family: exp, sans-serif;
+} */
